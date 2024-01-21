@@ -10,22 +10,14 @@ This makes poor mental health a global problem needed to be solve as soon as pos
 
 ## Project Description
 
-Pacify provides some instant and effective solution to this problem. Using this will help one to develop good mental habits and develop a positive and 
-healthy mindset.
-Pacify provides various features:
+Using Mind Analyzer can assist one to create excellent mental habits and a positive and healthy mindset. It offers a quick and practical solution to this issue.
+It provides various features:
 
-- **_Quiz_:** The quiz section helps you discover about the mental health problems you are currently dealing with by asking some questions regarding your daily 
-behavior, actions and feelings.
+- **_Quiz_:** The quiz portion asks you questions about your daily behavior, actions, and feelings to help you learn more about the mental health issues you are currently facing.
 
-- **_Journal_:** Journaling can help reduce anxiety, lessen feelings of stress, and increase an individual's mental well-being. You can use the journal to write 
-down your thoughts, feelings and emotions as it can free up your mind and re-install calmness.
+- **_Journal_:** Journaling has the potential to improve a person's mental health by lowering stress levels and anxiety. Writing down your ideas, sentiments, and emotions in a notebook might help you to clear your head and find serenity again.
 
-- **_Pomodoro Timer_:** In the pandemic, work level has greatly increased and a lot of people sit in front of their computers for prolonged periods of time. It 
-is not healthy for your mind to work for long periods of time without a break. Using the Pomodoro Timer feature you can implement small breaks into your work.
-
-- **_Yoga Gallery_:** Mental health is not only about the mind, it is also about the body. It is crucial for you to occasionally take some time and just relax your whole body. Yoga is a great way of doing this. You can search and sort through the gallery to find the type of yoga and poses that you like the best.
-
-**_Articles_:** You can read about some useful and informative information.
+- **_Yoga Gallery_:** Mental health is not only about the mind, it is also about the body. It is vital for you to occasionally take some time and just relax your whole body. A fantastic method for doing this is yoga. To locate the greatest yoga positions and styles for you, you can search and sort the collection.
 
 ## Tech Stack 
 ![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
