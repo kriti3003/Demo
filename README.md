@@ -11,7 +11,7 @@ This makes poor mental health a global problem needed to be solve as soon as pos
 ## Project Description
 
 Using Mind Analyzer can assist one to create excellent mental habits and a positive and healthy mindset. It offers a quick and practical solution to this issue.
-It provides various features:
+It provides various features such as:
 
 - **_Quiz_:** The quiz portion asks you questions about your daily behavior, actions, and feelings to help you learn more about the mental health issues you are currently facing.
 
