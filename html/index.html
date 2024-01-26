@@ -1,40 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>
-        index
-    </title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        /* Add your additional styles here */
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the image covers the entire box */
+        }
+    </style>
 </head>
-
 <body>
-  <header class = "container">
-    <h1 ><center>Welcome to Mind Analyzer </center></h1>
-    <div>
-      <center>
-      <img src = "https://i.pinimg.com/originals/cb/9b/65/cb9b6526c71ff32e5cb6020709289dcc.jpg" alt= "aesthetic", width = 400, height = 500>
-      </center>
-  </header>
+    <header class="container">
+        <h1>Welcome to Mind Analyzer</h1>
+        <div>
+            <img src="https://i.pinimg.com/originals/cb/9b/65/cb9b6526c71ff32e5cb6020709289dcc.jpg"
+                alt="aesthetic" width="400" height="500">
+        </div>
+    </header>
+
+    <div class="box-container">
+        <!-- Journal Box -->
+        <div class="box" onclick="openPage('journal.html')">
+            <h2>Journal</h2>
+            <img src="https://i.pinimg.com/736x/91/2d/a9/912da900b020cda56b6b399df906b1d9.jpg" 
+                alt="Journal Image">
+        </div>
+
+        <!-- Quiz Box -->
+        <div class="box" onclick="openPage('quiz.html')">
+            <h2>Quiz</h2>
+            <img src="https://i.pinimg.com/originals/21/7a/d0/217ad0ad8b9d7323101c2b384725defb.jpg" alt="Quiz Image" object-fit: "contain">
+        </div>
+
+        <!-- Yoga Poses Box -->
+        <div class="box" onclick="openPage('yoga-poses.html')">
+            <h2>Yoga Poses</h2>
+            <img src="https://i.pinimg.com/originals/98/7a/3a/987a3a7ec66f48101102a32d093b2953.jpg" alt="Yoga Poses Image">
+        </div>
     </div>
-    <div class = "box-container">
-      <!-- Journal Box -->
-      <div class="box" onclick="openPage('journal.html')">
-        <h2>Journal</h2>
-        <img src="https://i.pinimg.com/736x/91/2d/a9/912da900b020cda56b6b399df906b1d9.jpg" alt="Journal Image">
-      </div>
-
-    <!-- Quiz Box -->
-      <div class="box" onclick="openPage('quiz.html')">
-        <h2>Quiz</h2>
-        <img src="https://i.pinimg.com/originals/21/7a/d0/217ad0ad8b9d7323101c2b384725defb.jpg" alt="Quiz Image">
-      </div>
-
-    <!-- Yoga Poses Box -->
-      <div class="box" onclick="openPage('yoga-poses.html')">
-        <h2>Yoga Poses</h2>
-        <img src="https://i.pinimg.com/originals/98/7a/3a/987a3a7ec66f48101102a32d093b2953.jpg" alt="Yoga Poses Image">
-      </div>
-  </div>
-
 </body>
 </html>
