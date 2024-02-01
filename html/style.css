@@ -3,7 +3,7 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: #DDD9CE;
+  background: #e4c2c1;
 }
 body {
   margin: 0;
@@ -26,7 +26,7 @@ header {
   padding: 20px;
   width: 100%;
   height: 45%;
-  background: #ebe5e0;
+  background: #FBF2FF;
 }
 
 .box {
@@ -57,7 +57,7 @@ header {
 }
 
 .section1 {
-  background: #EFECE9;
+  background: #C2F9FF;
   height: 17vh;
   width: 500vh;
   margin-top: 5vh;

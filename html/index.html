@@ -32,10 +32,17 @@
         </div>
 
         <!-- Quiz Box -->
-        <div class="box" onclick="openPage('quiz.html')">
+        <div class="box" onclick="openQuizPage()">
             <h2>Quiz</h2>
-            <img src="https://i.pinimg.com/originals/21/7a/d0/217ad0ad8b9d7323101c2b384725defb.jpg" alt="Quiz Image" object-fit: "contain">
+            <img src="https://i.pinimg.com/originals/21/7a/d0/217ad0ad8b9d7323101c2b384725defb.jpg" alt="Quiz Image">
         </div>
+        
+        <script>
+            function openQuizPage() {
+                window.open('quiz.html', '_blank');
+            }
+        </script>
+        
 
         <!-- Yoga Poses Box -->
         <div class="box" onclick="openPage('yoga-poses.html')">
