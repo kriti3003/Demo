@@ -1,16 +1,56 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width-device-width, initial scale = 1.0">
-    <title> Login page</title>
-    <link href = "loginpage.css" rel = "stylesheet" type = "text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link href="loginpage.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div class = "box1">
-        <h2>
-            Login
-        </h2>
+    <div class="box1">
+        <h2>Login</h2>
+        <br><br>
+        <h4>
+            <label for="username"> Username:</label>
+            <input type="text" id="username" required>
+            <br><br>
+            <label for="password"> Password:</label>
+            <input type="password" id="password" required>
+        </h4>
+        <!-- Custom Google Sign-In button -->
+        <button id="googleSignInBtn" onclick="signInWithGoogle()" disabled>Sign in With Google</button>
     </div>
+
+    <!-- Load Google API library synchronously and configure the client ID -->
+    <script>
+        // Function to trigger Google Sign-In
+        function signInWithGoogle() {
+            if (gapi && gapi.auth2 && gapi.auth2.getAuthInstance()) {
+                gapi.auth2.getAuthInstance().signIn().then(onSignIn);
+            } else {
+                console.error('Google API not initialized.');
+                // Disable sign-in button and/or show a loading message until gapi is loaded
+                document.getElementById('googleSignInBtn').disabled = true;
+            }
+        }
+    
+        function onGoogleScriptLoad() {
+            gapi.load('auth2', function() {
+                gapi.auth2.init({
+                    client_id: '194383628607-svmtbov6qn958i74nl20em5bl2169htj.apps.googleusercontent.com',
+                    cookie_policy: 'single_host_origin'
+                }).then(function () {
+                    // Enable the Google Sign-In button after initialization
+                    document.getElementById('googleSignInBtn').disabled = false;
+                });
+            });
+        }
+
+        // Dynamically create a script element and append it to the head
+        var script = document.createElement('script');
+        script.src = 'https://apis.google.com/js/platform.js';
+        script.onload = onGoogleScriptLoad;
+        document.head.appendChild(script);
+    </script>
 </body>
 </html>
