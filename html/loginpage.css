@@ -3,10 +3,26 @@ html {
     width: 100%;
     margin: 0;
     padding: 0;
-    background: #ebe1d1;
+    background: linear-gradient(45deg, #fadde1, #ffcad4);
   }
   body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+  }
+  .box1 {
+    text-align: center;
+    background: #fff1f5;
+    padding: 20px;
+    border: 0px solid #39383A;
+    cursor: pointer;
+    width: 450px;
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+    border-radius: 20px; /* Adjust the border-radius for round corners */
   }

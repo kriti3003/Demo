@@ -9,10 +9,11 @@
 </head>
 <body>
     <header class="container">
-        <h1>Peaceful Paws</h1>
+        <h1>Klear</h1>
         <div>
             <img src="https://i.pinimg.com/originals/7e/bb/69/7ebb69fe5c8a456702d64f68b198ebfc.png"
                 alt="aesthetic" width= "98%" height="350px">
+            <!-- login button -->
             <a href="#" class="login-button" onclick = "openloginPage()">Login</a>
         </div>
         <script>
@@ -24,11 +25,18 @@
 
     <div class="box-container">
         <!-- Journal Box -->
-        <div class="box" onclick="openPage('journal.html')">
+        <div class="box" onclick="openJournalPage('journal.html')">
             <h2>Journal</h2>
             <img src="https://i.pinimg.com/564x/1b/b7/ea/1bb7ea9b59a7322607950037d38e2921.jpg" 
                 alt="Journal Image">
         </div>
+        <!-- function to open a new page without a new tab-->
+        <script>
+            function openJournalPage(){
+                window.location.href = 'journal.html';
+            }
+            </script>
+
 
         <!-- Quiz Box -->
         <div class="box" onclick="openQuizPage()">
@@ -38,7 +46,7 @@
         
         <script>
             function openQuizPage() {
-                window.open('quiz.html', '_blank');
+                window.location.href = 'quiz.html';
             }
         </script>
         
@@ -48,6 +56,11 @@
             <h2>Yoga Poses</h2>
             <img src="https://i.pinimg.com/564x/44/d8/a2/44d8a283bf54eb6ca16931fc0f71e16c.jpg" alt="Yoga Poses Image">
         </div>
+        <script>
+            function openPage(){
+                window.location.href = 'yoga-poses.html';
+            }
+        </script>
     </div>
     <h3>
             Why is mental health important?

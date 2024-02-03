@@ -3,7 +3,7 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: #ebe1d1;
+  background: #fadde1;
 }
 body {
   margin: 0;
@@ -14,10 +14,12 @@ h2{
   color: #9F716C;
 }
 h1{
-  color: #2E2E2E
+  color: #2E2E2E;
+  font-family: balerno;
 }
 .container {
   text-align: center;
+  background: #ffffff;
 }
 header {
   background-color: #D3c3b2;
@@ -43,7 +45,7 @@ h3{
 }
 .box {
   text-align: center;
-  background: linear-gradient(45deg, #d8c9ba, #e5e1d8);
+  background: linear-gradient(180deg,#bdcae2, #cdc9da, #dec6d3,#ecc4cb);
   padding: 20px;
   border: 0px solid #39383A;
   cursor: pointer;
@@ -84,11 +86,12 @@ h3{
   top: 10px;
   right: 10px;
   padding: 10px 20px;
-  background-color: #686158;
+  background-color: #fadde1;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
 }
+  
   
