@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>
-        yoga-poses
-    </title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>My Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
-  <header class = "container">
-    <h1 ><center>Welcome to Meditopia </center></h1>
-</header>
+
+  <header class="container">
+    <h1><center>Welcome to chatbot</center></h1>
+  </header>
+
+  <!-- Include Botpress Webchat Script -->
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <script>
+    window.botpressWebChat.init({
+        "composerPlaceholder": "Chat with bot",
+        "botConversationDescription": "This chatbot was built surprisingly fast with Botpress",
+        "botId": "16736959-258d-4bc8-8756-290f6dde463b",
+        "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+        "messagingUrl": "https://messaging.botpress.cloud",
+        "clientId": "16736959-258d-4bc8-8756-290f6dde463b",
+        "webhookId": "f6c7b123-aa0c-47a5-8590-82d6004e74a2",
+        "lazySocket": true,
+        "themeName": "prism",
+        "website": "https://chatbotwebsite.com",
+        "frontendVersion": "v1",
+        "enableConversationDeletion": true,
+        "theme": "prism",
+        "themeColor": "#2563eb"
+    });
+  </script>
+
+  <!-- Other content of your website -->
+
 </body>
 </html>
