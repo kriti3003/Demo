@@ -10,15 +10,18 @@
     <div class="box1">
         <h2>Login</h2>
         <br><br>
-        <h4>
-            <label for="username"> Username:</label>
-            <input type="text" id="username" required>
+        <table class="table1">
+            <h4>
+            <tr><td><label for="username"> Username:</label></td></tr>
+            <tr><td><input type="text" id="username" placeholder="Enter username" required></td></tr>
             <br><br>
-            <label for="password"> Password:</label>
-            <input type="password" id="password" required>
-        </h4>
+            <tr><td><label for="password"> Password:</label></td></tr>
+            <tr><td><input type="password" id="password" placeholder="Enter password" required></td></tr>
+            </h4>
+        </table>
+        <br><br>
         <!-- Custom Google Sign-In button -->
-        <button id="googleSignInBtn" onclick="signInWithGoogle()"> Sign in With Google </button>
+        <button id="googleSignInBtn" onclick="signInWithGoogle()">Sign in With Google</button>
     </div>
 
     <!-- Load Google API library synchronously and configure the client ID -->

@@ -1,15 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>
-        index
-    </title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="journal.css">
+    <title>Diary</title>
 </head>
-
 <body>
-  <header class = "container">
-    <h1 ><center>Welcome to Mind Analyzer </center></h1>
-</header>
+  <header>
+    <h1>My Diary</h1>
+  </header>
+
+  <main>
+    <div class="entry" id="entry1">
+      <h2 class="date" id="date1"></h2>
+      <textarea class="content" id="content1" placeholder="Write your diary entry here..."></textarea>
+    </div>
+    <button type="button" onclick="add()">Add Entry</button>
+    <ul></ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 My Diary</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      function getCurrentDate() {
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        return new Date().toLocaleDateString('en-US', options);
+      }
+  
+      function add() {
+        var content1 = document.getElementById('content1').value.trim();
+        if (content1 !== '') {
+          var ul = document.querySelector('ul');
+          var li = document.createElement('li');
+          li.innerHTML = `<span>${content1}</span><span>${getCurrentDate()}</span><button onclick="deleteEntry(this)">Delete</button>`;
+          ul.appendChild(li);
+        }
+      }
+  
+      document.getElementById('date1').innerText = getCurrentDate();
+      document.getElementById('content1').addEventListener('focusout', function() {
+        const entryNumber = this.id.slice(-1);
+        const currentDate = getCurrentDate();
+        document.getElementById('date' + entryNumber).innerText = currentDate;
+      });
+  
+      window.add = add; // Expose the add function globally for the onclick attribute
+    });
+  
+    function deleteEntry(button) {
+      var li = button.parentNode;
+      li.parentNode.removeChild(li);
+    }
+  </script>
+  
 </body>
 </html>
+

@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     
 </head>
 <body>
     <header class="container">
-        <h1>Resilience</h1>
-        <div>
-            <img src="https://i.pinimg.com/originals/7e/bb/69/7ebb69fe5c8a456702d64f68b198ebfc.png"
-                alt="aesthetic" width= "98%" height="350px">
+        <h1>RESILIENCE</h1>
+           <img src="https://i.pinimg.com/originals/7e/bb/69/7ebb69fe5c8a456702d64f68b198ebfc.png"
+                alt="aesthetic" height="375px">
             <!-- login button -->
             <a href="#" class="login-button" onclick = "openloginPage()">Login</a>
-        </div>
+            
         <script>
             function openloginPage(){
                 window.location.href = 'login.html';
@@ -24,10 +23,10 @@
     </header>
 
     <div class="box-container">
-        <!-- Chat bot -->
+        <!-- Journal Box -->
         <div class="box" onclick="openJournalPage('journal.html')">
             <h2>Tranquil Talks</h2>
-            <img src="" 
+            <img id="imgjournal" src="https://i.pinimg.com/564x/1b/b7/ea/1bb7ea9b59a7322607950037d38e2921.jpg" 
                 alt="Journal Image" height: 380px>
         </div>
         <!-- function to open a new page without a new tab-->
@@ -41,7 +40,7 @@
         <!-- Quiz Box -->
         <div class="box" onclick="openQuizPage()">
             <h2>Quiz</h2>
-            <img src="https://i.pinimg.com/564x/42/5b/df/425bdf2bf3c78d3c91e05648c375fa56.jpg" alt="Quiz Image" height: 380px>
+            <img id="imgquiz" src="https://i.pinimg.com/564x/42/5b/df/425bdf2bf3c78d3c91e05648c375fa56.jpg" alt="Quiz Image" height: 380px>
         </div>
         
         <script>
@@ -54,7 +53,7 @@
         <!-- Yoga Poses Box -->
         <div class="box" onclick="openPage('yoga-poses.html')">
             <h2>Meditopia</h2>
-            <img src="https://i.pinimg.com/564x/44/d8/a2/44d8a283bf54eb6ca16931fc0f71e16c.jpg" alt="Yoga Poses Image" height: 380px>
+            <img id="imgyoga" src="https://i.pinimg.com/564x/44/d8/a2/44d8a283bf54eb6ca16931fc0f71e16c.jpg" alt="Yoga Poses Image" height: 380px>
         </div>
         <script>
             function openPage(){
