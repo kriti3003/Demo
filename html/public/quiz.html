@@ -8,14 +8,14 @@
 </head>
 <body>
         <header>
-            <h1>Mental Health Quiz</h1>
+            <h1 id="quizhead">Mental Health Quiz</h1>
         </header>
     
         <div class="section">
             <div class="section1">
                 <!-- Question 1 -->
-                    <h2>Question 1</h2>
-                    <p>How are you feeling today?</p>
+                    <h2 id="quiz_ques">Question 1</h2>
+                    <p id="quiz_ques">How are you feeling today?</p>
                     <form>
                         <input type="radio" name="q1" value="a"> A. Overwhelmingly sad<br>
                         <input type="radio" name="q1" value="b"> B. Somewhat down, but not too bad<br>
@@ -24,8 +24,8 @@
                     <br>
 
                 <!-- Question 2 -->
-                    <h2>Question 2</h2>
-                    <p>Do you feel stressed about your work?</p>
+                    <h2 id="quiz_ques">Question 2</h2>
+                    <p id="quiz_ques">Do you feel stressed about your work?</p>
                     <form>
                         <input type="radio" name="q2" value="a"> A. Yes, a lot<br>
                         <input type="radio" name="q2" value="b"> B. Sometimes<br>
@@ -33,8 +33,8 @@
                     </form>
                      <!-- question 3-->
 
-                    <h2>Question 3</h2>
-                    <p>Have you been experiencing changes in your sleep pattern</p>
+                    <h2 id="quiz_ques">Question 3</h2>
+                    <p id="quiz_ques">Have you been experiencing changes in your sleep pattern</p>
                     <form>
                       <input type="radio" name="q3" value="a"> A. Yes, a lot<br>
                       <input type="radio" name="q3" value="b"> B. A few<br>
@@ -43,8 +43,8 @@
 
                      <!-- question 4-->
 
-                    <h2>Question 4</h2>
-                    <p>Have you experienced a loss of interest in activities you used to enjoy?</p>
+                    <h2 id="quiz_ques">Question 4</h2>
+                    <p id="quiz_ques">Have you experienced a loss of interest in activities you used to enjoy?</p>
                     <form>
                       <input type="radio" name="q4" value="a"> A. Yes<br>
                       <input type="radio" name="q4" value="b"> B. Not exactly<br>
@@ -52,8 +52,8 @@
                     </form>
                     <!-- question 5-->
 
-                  <h2>Question 5</h2>
-                  <p>How frequently do you notice change in your moods?</p>
+                  <h2 id="quiz_ques">Question 5</h2>
+                  <p id="quiz_ques">How frequently do you notice change in your moods?</p>
                   <form>
                     <input type="radio" name="q5" value="a"> A. A lot of times<br>
                     <input type="radio" name="q5" value="b"> B. Sometimes<br>
@@ -61,8 +61,8 @@
                   </form>
                     <!-- question 6-->
 
-                  <h2>Question 6</h2>
-                  <p>Do you feel your mood swings interfere with your relationships?</p>
+                  <h2 id="quiz_ques">Question 6</h2>
+                  <p id="quiz_ques">Do you feel your mood swings interfere with your relationships?</p>
                   <form>
                     <input type="radio" name="q6" value="a"> A. Yes, a lot<br>
                     <input type="radio" name="q6" value="b"> B. Sometimes<br>
@@ -70,8 +70,8 @@
                   </form>
                   <!-- question 7-->
 
-                  <h2>Question 7</h2>
-                  <p>How would you describe your decision making process?</p>
+                  <h2 id="quiz_ques">Question 7</h2>
+                  <p id="quiz_ques">How would you describe your decision making process?</p>
                   <form>
                     <input type="radio" name="q7" value="a"> A. I feel confused a lot of times<br>
                     <input type="radio" name="q7" value="b"> B. I feel some time but take right decisions <br>
@@ -79,8 +79,8 @@
                   </form>
                 <!-- question 8-->
 
-                <h2>Question 8</h2>
-                <p>Do you find yourself overthinking often?</p>
+                <h2 id="quiz_ques">Question 8</h2>
+                <p id="quiz_ques">Do you find yourself overthinking often?</p>
                 <form>
                   <input type="radio" name="q8" value="a"> A. Yes, a lot<br>
                   <input type="radio" name="q8" value="b"> B. Sometimes<br>
@@ -88,16 +88,16 @@
                 </form>
                 <!-- Question 9-->
 
-                <h2>Question 9</h2>
-                <p>Are there underlying fears that lead to your overthinking tendencies?</p>
+                <h2 id="quiz_ques">Question 9</h2>
+                <p id="quiz_ques">Are there underlying fears that lead to your overthinking tendencies?</p>
                 <form>
                   <input type="radio" name="q9" value="a"> A. Yes, a past incident<br>
                   <input type="radio" name="q9" value="b"> B. Not that i can recognise<br>
                   <input type="radio" name="q9" value="c"> C. Not at all<br>
                </form>
              <!-- Question 10-->
-                <h2>Question 10</h2>
-                <p>Do you experienced persistent feelings of sadness and hopelessness?</p>
+                <h2 id="quiz_ques">Question 10</h2>
+                <p id="quiz_ques">Do you experienced persistent feelings of sadness and hopelessness?</p>
                 <form>
                   <input type="radio" name="q10" value="a"> A. Yes, for several months<br>
                   <input type="radio" name="q10" value="b"> B. A few times in a month<br>
@@ -106,8 +106,10 @@
                 <br> <br> <br>
                 <br>
                 <br>
+                <form>
                 <!--submit button -->
-                <a href="#" class="submit" onclick = "calculateResults()">Submit</a>
+                <button class="submit" onclick = "calculateResults()">Submit</button>
+                </form>
                 </div>
              </div>
         </div>

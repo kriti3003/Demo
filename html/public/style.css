@@ -10,10 +10,15 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
+#quiz_ques{
+  padding: 0px 20px 0px 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 h2{
-  color: #AC9C8D;
+  color: #a88667;
 }
 h1{
+  text-align: center;
   font-size: 45px;
   color: #2E2E2E;
   font-family: monospace;
@@ -76,15 +81,18 @@ h3{
       height: 55%;
   }
 }
+#quizhead{
+  background-color: #fff1f1;
+}
 
-.section1 {
+/* .section1 {
   background: #fadde1;
   padding-left: 20px;
   height: 17vh;
   width: 500vh;
   margin-top: 5vh;
   margin-bottom: 3vh;
-}
+} */
 .login-button {
   position: absolute;
   top: 10px;
@@ -102,15 +110,18 @@ h3{
   background-color: #E3C1B4;
 }
 .submit{
-  position: fixed;
+  position: relative;
   bottom: 20px; 
   left: 50px; 
   padding: 10px 10px;
-  background-color: #f9adb7;
+  background-color: #bb154a;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  border: none;
   cursor: pointer;
 } 
-  
+.submit:hover{
+  background-color: #e2a68e;
+}

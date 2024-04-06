@@ -11,7 +11,13 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
+h1{
+    text-align: center;
+    font-size: 45px;
+    color: #2E2E2E;
+    font-family: monospace;
+    padding: 0px;
+}
 header {
     background-color: #e3c1b4;
     color: white;
