@@ -1,108 +1,103 @@
 <!DOCTYPE html>
-<html lang="en" dir = "ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
-    <link href="loginpage.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-</head>
-<body>
-    <div class="bg-img">
-        <div class="content">
-           <header>Login Form</header>
-           <form action="#">
-              <div class="field">
-                 <span class="fa fa-user"></span>
-                 <input type="text" required placeholder="Email or Phone">
-              </div>
-              <div class="field space">
-                 <span class="fa fa-lock"></span>
-                 <input type="password" class="pass-key" required placeholder="Password">
-                 <span class="show">SHOW</span>
-              </div>
-              <div class="pass">
-                 <a href="#">Forgot Password?</a>
-              </div>
-              <div class="field">
-                 <input type="submit" value="LOGIN">
-              </div>
-           </form>
-           <div class="login">
-              Or login with
-           </div>
-           <div class="links">
-            <button id="googleSignInBtn" onclick="signInWithGoogle()"> Sign in With Google </button>
-           </div>
-           <div class="signup">
-              Don't have account?
-              <a href="#">Signup Now</a>
-           </div>
-        </div>
-     </div>
-    </div>
-=======
-    <div class="box1">
-        <h2>Login</h2>
-        <br><br>
-        <table class="table1">
-            <h4>
-            <tr><td><label for="username"> Username:</label></td></tr>
-            <tr><td><input type="text" id="username" placeholder="Enter username" required></td></tr>
-            <br><br>
-            <tr><td><label for="password"> Password:</label></td></tr>
-            <tr><td><input type="password" id="password" placeholder="Enter password" required></td></tr>
-            </h4>
-        </table>
-        <br><br>
-        <!-- Custom Google Sign-In button -->
-        <button id="googleSignInBtn" onclick="signInWithGoogle()">Sign in With Google</button>
->>>>>>> origin/main
-    </div>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Responsive Login and Signup Form </title>
 
-    <!-- Load Google API library synchronously and configure the client ID -->
-    <script>
-        // Function to trigger Google Sign-In
-        function signInWithGoogle() {
-            if (gapi && gapi.auth2 && gapi.auth2.getAuthInstance()) {
-                gapi.auth2.getAuthInstance().signIn().then(onSignIn);
-            } else {
-                console.error('Google API not initialized.');
-                // Disable sign-in button and/or show a loading message until gapi is loaded
-                document.getElementById('googleSignInBtn').disabled = true;
-            }
-        }
-    
-        function onGoogleScriptLoad() {
-            gapi.load('auth2', function() {
-                gapi.auth2.init({
-                    client_id: '194383628607-svmtbov6qn958i74nl20em5bl2169htj.apps.googleusercontent.com',
-                    cookie_policy: 'single_host_origin'
-                }).then(function () {
-                    // Enable the Google Sign-In button after initialization
-                    document.getElementById('googleSignInBtn').disabled = false;
-                });
-            });
-        }
+        <!-- CSS -->
+        <link rel="stylesheet" href="loginpage.css">
+                
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+                        
+    </head>
+    <body>
+        <section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Login</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input">
+                        </div>
 
-        // Dynamically create a script element and append it to the head
-        var script = document.createElement('script');
-        script.src = 'https://apis.google.com/js/platform.js';
-        script.onload = onGoogleScriptLoad;
-        document.head.appendChild(script);
-        const pass_field = document.querySelector('.pass-key');
-         const showBtn = document.querySelector('.show');
-         showBtn.addEventListener('click', function(){
-          if(pass_field.type === "password"){
-            pass_field.type = "text";
-            showBtn.textContent = "HIDE";
-            showBtn.style.color = "#3498db";
-          }else{
-            pass_field.type = "password";
-            showBtn.textContent = "SHOW";
-            showBtn.style.color = "#222";
-          }
-         })
-    </script>
-</body>
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass">Forgot password?</a>
+                        </div>
+
+                        <div class="field button-field">
+                            <button>Login</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+
+                <div class="media-options">
+                    <a href="#" class="field google">
+                        <img src="https://i.pinimg.com/originals/44/0f/c0/440fc08667bcce170581ee6b8f83d6f4.png" alt="" class="google-img">
+                        <span>Login with Google</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Signup Form -->
+
+            <div class="form signup">
+                <div class="form-content">
+                    <header>Signup</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Create password" class="password">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Confirm password" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="field button-field">
+                            <button>Signup</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+
+                <div class="media-options">
+                    <a href="#" class="field google">
+                        <img src="https://i.pinimg.com/originals/44/0f/c0/440fc08667bcce170581ee6b8f83d6f4.png" alt="" class="google-img">
+                        <span>Login with Google</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- JavaScript -->
+        <script src="login.js"></script>
+    </body>
 </html>
