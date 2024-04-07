@@ -6,7 +6,7 @@ $email = "";
 $errors = array();
 
 // connect to database 
-$db = mysqli_connect('localhost', 'root', '', 'project');
+$db = mysqli_connect('localhost', 'root', 'kriti', 'users');
 
 // login user 
 if(isset($_POST['login_user'])){
@@ -39,7 +39,7 @@ if(isset($_POST['reg_user'])){
     // form is filled correctly 
     if(empty($email)) { array_push($errors, "Email is required");}
     if(empty($password_1)) { array_push($errors, "Password is required");}
-    if($password_1 != $password_2){
+    if($password_1 != $confirm_password){
         array_push($errors, "Two passwords don't match");
     }
 
